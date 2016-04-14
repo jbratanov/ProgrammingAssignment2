@@ -1,0 +1,28 @@
+> inv <- makeCacheMatrix(matrix(1:4,2,2))
+> cacheSolve(inv)
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> cacheSolve(inv)
+getting cached data
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> cacheSolve(inv)
+getting cached data
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> inv <- makeCacheMatrix(matrix(5:8,2,2))
+> cacheSolve(inv)
+     [,1] [,2]
+[1,]   -4  3.5
+[2,]    3 -2.5
+> cacheSolve(inv)
+getting cached data
+     [,1] [,2]
+[1,]   -4  3.5
+[2,]    3 -2.5
+
+> 
+
